@@ -1,21 +1,19 @@
 import { Block } from "./classes/block";
 import { Blockchain } from './classes/blockchain';
 
-
-
 let chain = new Blockchain();
 
 chain.startChain();
 
 // let b  = ;
 chain.addBlock(new Block({
-    name: "Rodrigo",
-    email: "rodrigo.kammer@gmail.com"
+    name: "James M. Larson",
+    email: "jlarson@mybusiness.com"
 }, chain.getLatestBlockHash()));
 
 chain.addBlock(new Block({
-    name: "Rebekah",
-    email: "rebekah_am@yahoo.com"
+    name: "Brian L. Bohrer",
+    email: "brian.bohrer@gmai.com"
 }, chain.getLatestBlockHash()));
 
 chain.getFullChain().forEach((element, index) =>{
